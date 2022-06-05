@@ -6,8 +6,8 @@ public class Product {
     private int categoryId;
     private double price;
     private int stock;
-    private Category category;
     private boolean active;
+    private Category category;
 
     public int getProductId() {
         return productId;
@@ -49,19 +49,19 @@ public class Product {
         this.stock = stock;
     }
 
-    public Category getCategory() {
-        return category;
-    }
-
-    public void setCategory(Category category) {
-        this.category = category;
-    }
-
     public boolean isActive() {
         return active;
     }
 
     public void setActive(boolean active) {
         this.active = active;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
     }
 }

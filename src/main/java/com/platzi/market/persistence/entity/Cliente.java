@@ -9,9 +9,8 @@ public class Cliente {
 
     @Id
     private String id;
-
     private String nombre;
-    private String apelllidos;
+    private String apellidos;
     private Long celular;
     private String direccion;
 
@@ -37,12 +36,12 @@ public class Cliente {
         this.nombre = nombre;
     }
 
-    public String getApelllidos() {
-        return apelllidos;
+    public String getApellidos() {
+        return apellidos;
     }
 
-    public void setApelllidos(String apelllidos) {
-        this.apelllidos = apelllidos;
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
     }
 
     public Long getCelular() {
@@ -67,5 +66,13 @@ public class Cliente {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public List<Compra> getCompras() {
+        return compras;
+    }
+
+    public void setCompras(List<Compra> compras) {
+        this.compras = compras;
     }
 }
